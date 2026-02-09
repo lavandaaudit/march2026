@@ -4,13 +4,17 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>ZORI + LIS12 · STACK</title>
+<title>ZORI + LIS12 + CITY · STACK</title>
 
 <style>
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
 }
 
 body {
@@ -24,21 +28,22 @@ body {
     width: 100%;
 }
 
-/* Кожна секція = повний екран */
+/* Кожна сторінка = 1 екран */
 .section {
     width: 100%;
     height: 100vh;
     position: relative;
 }
 
-/* iframe */
+/* iframe на весь блок */
 .section iframe {
     width: 100%;
     height: 100%;
     border: none;
+    display: block;
 }
 
-/* Мобільна оптимізація */
+/* Mobile */
 @media (max-width: 768px) {
     .section {
         height: 100vh;
@@ -51,14 +56,19 @@ body {
 
 <div class="stack">
 
-    <!-- Сторінка 1 -->
+    <!-- 1. ZORI -->
     <section class="section">
         <iframe src="https://lavandaaudit.github.io/zori/"></iframe>
     </section>
 
-    <!-- Сторінка 2 -->
+    <!-- 2. LIS12 -->
     <section class="section">
-        <iframe src="https://lavandaaudit.github.io/lis.13/"></iframe>
+        <iframe src="https://lavandaaudit.github.io/lis12/"></iframe>
+    </section>
+
+    <!-- 3. CITY -->
+    <section class="section">
+        <iframe src="https://lavandaaudit.github.io/city/"></iframe>
     </section>
 
 </div>
